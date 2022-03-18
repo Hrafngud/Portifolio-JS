@@ -1,22 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 
 body {
   background: black;
-  font-family:'Libre Barcode 39 Text', cursive;
-  font-style: italic;
+  min-height: 100%;
+  width: 100vw;
 }
 
 .container {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 15%;
-  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family:'Libre Barcode 39 Text', cursive;
+  font-style: italic;
+  height: 10vh;
 }
 
 .glitch, .glow {
   color: #1556b8a3;
   position: relative;
-  font-size: 6.5vw;
+  font-size: 5.5vw;
   -webkit-animation: glitch 5s 5s infinite;
           animation: glitch 5s 5s infinite;
 }
@@ -599,4 +610,135 @@ body {
   2% {
     transform: rotateX(0deg) skewX(0deg);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.row-1 li {
+  background-color: ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+}
+
+.photocard{
+  width: 20vw;
+  height: 35vh;
+}
+
+.mypic {
+  background-image: url(/images/eumsm2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  mask-image: url(/images/Mask\ group.png);
+  mask-position: center;
+  -webkit-mask-image:url(/images/Mask\ group.png);
+  mask-size: contain;
+}
+.mask {
+  background-image: url(/images/Group\ 12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 99%;
+  height: 99%;
+}
+.namecard{
+  width: 40vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+#tracer-1, #tracer-3 {
+  background-color: rgb(0, 17, 255);
+  width: 5vw;
+  height: 4px;
+  position: relative;
+  left: 10vw;
+}
+
+#tracer-2 {
+  background-color: rgb(0, 17, 255);
+  width: 30vw;
+  height: 4px;
+}
+
+.skillcard {
+  width: 30vw;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+
+.skillcard > .tracer-4, .tracer-9 {
+  width: 35vw;
+  height: 4px;
+  background-color: chartreuse;
+}
+
+.skillcard > .tracer-5, .tracer-6, .tracer-7, .tracer-8 {
+  width: 5vw;
+  height: 4px;
+  background-color: chartreuse;
+}
+
+.tracer-5,.tracer-6 {
+  position: relative;
+  top: -10vw;
+}
+
+.tracer-
+.row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.row-2 .techskills, .projects {
+  background-color: red;
+  margin:10px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techskills {
+  width: 22vw;
+  height: 38vh;
+}
+
+.projects {
+  width: 73vw;
+  height: 38vh;
+}
+
+.projectsrow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projects .projectsrow li {
+
+  background-color: blue;
+  margin: 5px;
+}
