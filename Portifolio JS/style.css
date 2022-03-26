@@ -619,13 +619,11 @@ body {
 }
 
 .row-1 li {
-  background-color: ;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-
 }
 
 .photocard{
@@ -680,16 +678,26 @@ body {
   height: 4px;
 }
 
+.github {
+  background: url('https://api.iconify.design/cib/html5.svg?width=35') no-repeat center center / contain;
+  display: flex;
+  align-items: flex-start;
+  color: blanchedalmond;
+  width: 35px;
+  height: 35px;
+}
+
 .skillcard {
-  width: 30vw;
-  height: 45vh;
+  width: 25vw;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   background-color: aquamarine;
+  border-radius: 30px;
 }
 
 .skillcard > .tracer-4, .tracer-9 {
-  width: 35vw;
+  width: 30vw;
   height: 4px;
   background-color: chartreuse;
 }
@@ -700,35 +708,84 @@ body {
   background-color: chartreuse;
 }
 
-.tracer-5,.tracer-6 {
+.tracer-5{
   position: relative;
   top: -10vw;
+  left: 30vh;
 }
 
-.tracer-
+.tracer-6{
+  position: relative;
+  top: -10vw;
+  left: -30vh;
+}
+
+.tracer-4{
+  position: relative;
+  top: -11vw;
+}
+
+.tracer-9{
+  position: relative;
+  top: 10vw;
+}
+
+.tracer-7{
+  position: relative;
+  top: 9vw;
+  left: -30vh;
+}
+
+.tracer-8{
+  position: relative;
+  top: 9vw;
+  left: 30vh;
+}
 .row-2 {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: row;
 }
 
-.row-2 .techskills, .projects {
-  background-color: red;
-  margin:10px;
-  margin-top: 0px;
+.row-2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color:white;
 }
+
 
 .techskills {
   width: 22vw;
   height: 38vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.tracer-10,.tracer-11,.tracer-12,.tracer-13 {
+  width: 5vw;
+  height: 4px;
+  background-color: chartreuse;
+}
+
+.tracer-12{
+  position: relative;
+  top: -15vh;
+  left: -5vw;
+}
+
+.tracer-11 {
+
+  position: relative;
+  top: -20vh;
+  right: -3vw;
 }
 
 .projects {
-  width: 73vw;
+  width: 65vw;
   height: 38vh;
 }
 
