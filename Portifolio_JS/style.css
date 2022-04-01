@@ -1,13 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;600&family=Libre+Barcode+39+Text&display=swap');
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
+  box-sizing: border-box; 
+}
+
+:root {
+
+  --bg: #212121;
+  --purple:#651FFF;
+  --blue:#0094FF;
+  --lightblue:#18FFFF;
+  --pink:#F50057;
+  --neongreen:#76FF03;
+  --green:#C6FF00;
 }
 
 body {
-  background: black;
+  background: var(--bg);
   height: 97vh;
   width: 100vw;
 }
@@ -25,7 +35,7 @@ body {
 }
 
 .glitch, .glow {
-  color: #1556b8a3;
+  color: var(--blue);
   position: relative;
   font-size: 5.5vw;
   -webkit-animation: glitch 5s 5s infinite;
@@ -36,8 +46,8 @@ body {
   content: attr(data-text);
   position: absolute;
   left: -2px;
-  text-shadow: -5px 0 rgb(0, 17, 255);
-  background: rgba(238, 33, 197, 0.514);
+  text-shadow: -5px 0 var(--pink);
+  background: var(--purple);
   overflow: hidden;
   top: 0;
   -webkit-animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
@@ -48,8 +58,8 @@ body {
   content: attr(data-text);
   position: absolute;
   left: 2px;
-  text-shadow: -5px 0 rgb(9, 226, 255);
-  background: rgb(89, 175, 103);
+  text-shadow: -5px 0 var(--lightblue);
+  background: var(--neongreen);
   overflow: hidden;
   top: 0;
   -webkit-animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
@@ -612,105 +622,232 @@ body {
   }
 }
 
+.tracer-1, .tracer-2, .tracer-3, .tracer-4, .tracer-5, .tracer-6, .tracer-7, .tracer-8, .tracer-9, .tracer-10,.tracer-11, .tracer-12, .tracer-13, .tracer-14, .tracer-15, .tracer-16, .tracer-17, .tracer-18, .tracer-19, .tracer-20, .tracer-21, .tracer-22, .tracer-23 {
+  height: 3px;
+  color: var(--blue);
+  background-color: var(--blue);
+}
+
 .row-1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Changa', sans-serif;
+  font-weight: 200;
 }
 
 .row-1 li {
-  color: white;
+  list-style: none;
 }
 
-.photocard, .namecard , .skillcard {margin-top: -15px;}
+.namecard , .skillcard {
+  margin-top: -20px;
+}
 
-.photocard{
-  width: 20vw;
-  height: 35vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3vh;
+.photocard {
+  position: relative;
 }
 
 .mypic {
-  background-image: url(/images/eumsm2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25vw;
-  height: 45vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat; 
-  mask-image: url(/images/Mask\ group.png);
-  mask-position: center;
-  -webkit-mask-image:url(/images/Mask\ group.png);
-  mask-size: contain;
-}
-.mask {
-  background-image: url(/images/Group\ 12.png);
+  background-image: url(/images/eumesm2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 99%;
-  height: 99%;
+  width: 20vw;
+  height: 35vh;
+  position: relative;
+  top: -4vh;
+  left: -1vw;
 }
+
+.github {
+  background-image: url(/assets/github.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7vw;
+  height: 7vh;
+  position: absolute;
+  bottom: 8vh;
+  cursor: pointer;
+}
+
+.linkedin {
+  background-image: url(/assets/linkedin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7vw;
+  height: 7vh;
+  position: absolute;
+  bottom: 8vh;
+  right: 1vw;
+  cursor: pointer;
+}
+
+.contact-1 {
+  background-image: url(/assets/telegram.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7vw;
+  height: 7vh;
+  position: absolute;
+  bottom: 8vh;
+  right: 1vw;
+  cursor: pointer;
+}
+
+.contact-2 {
+  background-image: url(/assets/whatsapp.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7vw;
+  height: 7vh;
+  position: absolute;
+  bottom: 8vh;
+  right: 1vw;
+  cursor: pointer;
+}
+
+.contact-3 {
+  background-image: url(/assets/email.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7vw;
+  height: 7vh;
+  position: absolute;
+  bottom: 8vh;
+  right: 1vw;
+  cursor: pointer;
+}
+
+
+
 .namecard{
   width: 40vw;
   height: 25vh;
   display: flex;
   flex-direction: column;
-  font-size: 10px;
   align-items: center;
   justify-content: center;
   margin-bottom: 3vh;
+  position: relative;
+  top: -3vh;
 }
 
-#tracer-1, #tracer-3 {
-  background-color: rgb(0, 17, 255);
+.myname {
+  color: var(--green);
+  font-size: 25px;
+  font-weight:600;
+  position: relative;
+  left: -3vw;
+}
+
+.webdeveloper {
+  color: white;
+  font-size: 25px;
+  font-weight:600;
+  position: relative;
+  left: -3vw;
+}
+
+.contact-1 {
+  background-image: url(/assets/telegram.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 5vw;
-  height: 4px;
+  height: 5vh;
+  position: absolute;
+  bottom: -1vh;
+  left: 8vw;
+  cursor: pointer;
+}
+
+.contact-2 {
+  background-image: url(/assets/whatsapp.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5vw;
+  height: 5vh;
+  position: absolute;
+  bottom: -1vh;
+  left: 14vw;
+  cursor: pointer;
+}
+
+.contact-3 {
+  background-image: url(/assets/email.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7vw;
+  height: 6vh;
+  position: absolute;
+  bottom: -1.5vh;
+  left: 19vw;
+  cursor: pointer;
+}
+
+.tracer-1, .tracer-3 {
+  width: 6vw;
   position: relative;
   left: 10vw;
-  top: 1.5px;
+  top: 0vw;
 }
 
-#tracer-2 {
-  background-color: rgb(0, 17, 255);
-  width: 30vw;
-  height: 4px;
-}
-
-.github {
-  background: url('https://api.iconify.design/cib/html5.svg?width=35') no-repeat center center / contain;
-  display: flex;
-  align-items: flex-start;
-  color: blanchedalmond;
-  width: 35px;
-  height: 35px;
+.tracer-2 {
+  width: 33vw;
 }
 
 .skillcard {
   width: 25vw;
   height: 40vh;
-  background-color: aquamarine;
   border-radius: 30px;
   position:relative;
+  top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgskillcard {
+  width: 16vw;
+  height: 37vh;
+  background-color: var(--blue);
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bgskillcard > .skills {
+  position: absolute;
+  top: -10vh;
+  left: -2vw;
+  width: 20vw;
+  color: var(--green);
+  font-size: 2vw;
+}
+ .courses {
+  color: white;
+  font-size: 1vw;
+  margin: 10px;
 }
 
 .skillcard > .tracer-4, .tracer-9 {
   width: 20vw;
-  height: 4px;
-  background-color: rgb(173, 35, 35);
   position:absolute;
 }
 
 .skillcard > .tracer-5, .tracer-6, .tracer-7, .tracer-8 {
-  width: 5vw;
-  height: 9px;
+  width: 3vw;
   position: absolute;
 }
 
@@ -720,27 +857,23 @@ body {
 }
 
 .tracer-5{
-  top:0vh;
-  left: 0vw;;
-  background-color: #eeff00;
+  top: 4vh;
+  left: 0vw;
 }
 
 .tracer-6{
-  top: 0vh;
+  top: 4vh;
   right: 0vw;
-  background-color: rgb(255, 0, 191);
 }
 
 .tracer-7{
-  bottom: 0vw;
-  left: 0vh;
-  background-color: rgb(255, 153, 0);
+  bottom: 2vh;
+  left: 0vw;
 }
 
 .tracer-8{
-  bottom: 0vh;
+  bottom: 2vh;
   right: 0vw;
-  background-color: rgb(255, 0, 0);
 }
 
 .tracer-9{
@@ -753,15 +886,16 @@ body {
   justify-content: center;
   align-items: flex-end;
   flex-direction: row;
+  font-family: 'Changa', sans-serif;
 }
 
 .techskills {
   width: 22vw;
   height: 38vh;
-  background-color: aquamarine;
   position: relative;
-  top: 7vh;
+  top: 5vh;
   right: 1vw;
+  list-style: none;
 }
 
 .subtitle-1{
@@ -773,114 +907,221 @@ body {
   text-align: center;
   position:relative;
   top: -3vh;
-  color: blue;
+  color: var(--green);
   font-size: 21px;
 }
 
 .tracer-10,.tracer-12 {
   width: 12vw;
-  height: 6px;
-  background-color: rgb(255, 0, 0);
   position: absolute;
 }
 
 .tracer-11,.tracer-13 {
-  width: 5vw;
-  height: 6px;
+  width: 2vw;
   position: absolute;
 }
 
 .tracer-10 {
-  top:-5vh;
+  top:-4vh;
   left: 5vw;;
 }
 
 .tracer-11 {
-  top: -1vh;
-  right: 0vw;
-  background-color: rgb(255, 0, 191);
+  top: -0.5vh;
+  right: 3vw;
 }
 
 .tracer-12{
-  bottom: 0vh;
+  bottom: 2vh;
   left: 5vw;
 }
 
 .tracer-13 {
-  top: -1vh;
-  left: 0vw;
-  background-color: rgb(255, 0, 0);
+  top: -0.5vh;
+  left: 3vw;
 }
 
 .techcard {
   width: 22vw;
   height: 38vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillicons {
+  width: 17vw;
+  height: 34vh;
+  background-color: var(--blue);
+  position: absolute;
+  top: -10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color:white;
+}
+
+.subicon1 {
+  text-align: center;
+  width: 20vw;
+}
+.subicon2{
+  text-align: center;
+  width: 20vw;
+}
+
+.icon {
+  width: 5vw;
+  height: 5vh;
+}
+
+.i1 {
+  background-image: url(/assets/html.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i2 {
+  background-image: url(/assets/css.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i3{
+  background-image: url(/assets/js.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i4{
+  background-image: url(/assets/vue.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i5 {
+  background-image: url(/assets/php.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i6 {
+  background-image: url(/assets/sql.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i1:hover {
+  background-image: url(/assets/htmll.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i2:hover {
+  background-image: url(/assets/cssl.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i3:hover {
+  background-image: url(/assets/jsl.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i4:hover {
+  background-image: url(/assets/vuel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i5:hover {
+  background-image: url(/assets/phpl.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.i6:hover {
+  background-image: url(/assets/sqll.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .tracer-14, .tracer-19 {
-  width: 12vw;
-  height: 6px;
-  background-color: rgb(255, 0, 0);
+  width: 22vw;
   position: absolute;
 }
 
 .tracer-15, .tracer-16 ,.tracer-17 ,.tracer-18 {
-  width: 5vw;
-  height: 6px;
+  width: 4vw;
   position: absolute;
-  background-color: rgb(255, 0, 191);
 }
 
 .tracer-14 {
   top: -4vh;
-  left: 5vw;
+  left: 0vw;
 }
 
 .tracer-15 {
   left:-2vw;
-  top:0vh;
+  top:2vh;
 }
 
 .tracer-16 {
   right:-2vw;
-  top:0vh;
+  top:2vh;
 }
 
 .tracer-17 {
   left:-2vw;
-  bottom:6vh;
+  bottom:8vh;
 }
 
 .tracer-18 {
   right:-2vw;
-  bottom:6vh;
+  bottom:8vh;
 }
 
 .tracer-19 {
-  left: 5vw;
+  left: 0vw;
   bottom: 3vh;
 }
 
 .subtitle-2 {
   width: 65vw;
   height: 38vh;
-  color: white;
   position: relative;
+  list-style: none;
+  color: white;
 }
 
 .myprojects {
   width: 15vw;
   position: relative;
-  top: -2vh;
+  top: -3.5vh;
   left: 5vw;
   text-align: center;
+  color: var(--green);
 }
 
 .tracer-20, .tracer-23 {
   width: 15vw;
-  height: 6px;
-  background-color: rgb(255, 0, 0);
   position: absolute;
 }
 
@@ -895,19 +1136,17 @@ body {
 
 .tracer-21, .tracer-22 {
   width: 2vw;
-  height: 3px;
-  background-color: rgb(255, 0, 242);
   position: absolute;
 }
 
 .tracer-21 {
   left: -2vw;
-  top: 2vh;
+  top: 3vh;
 }
 
 .tracer-22 {
   right: -2vw;
-  top: 2vh;
+  top: 3vh;
 }
 
 .projectsrow {
@@ -919,7 +1158,29 @@ body {
   top: 6vh;
 }
 .projects .projectsrow li {
-  background-color: blue;
+  list-style: none;
+  border-color: var(--blue);
+}
+
+.projects .projectsrow li:nth-of-type(1) {
+  border-bottom: 3px solid var(--blue);
+  border-left: 3px solid var(--blue);
+  border-right: 3px solid var(--blue);
+}
+
+.projects .projectsrow li:nth-of-type(2) {
+  border-top: 3px solid var(--blue);
+  border-right: 3px solid var(--blue);
+}
+
+.projects .projectsrow li:nth-of-type(3) {
+  border-bottom: 3px solid var(--blue);
+  border-right: 3px solid var(--blue);
+}
+
+.projects .projectsrow li:nth-of-type(4) {
+  border-top: 3px solid var(--blue);
+  border-right: 3px solid var(--blue);
 }
 
 .projectsitem {
@@ -940,6 +1201,7 @@ body {
   transform: rotate(35deg);
   background-color: red;
   position: relative;
+  border-radius: 15px;
 }
 
 .preview span {
@@ -951,25 +1213,9 @@ body {
   transform: rotate(-90deg);
 }
 
-/*
-#first {
-  left: -7vw;
-}
-
-*/
-
 .preview:hover {
   transition: 0.5s;
   transform: rotate(90deg);
   width: 14vw;
   height: 26vh;
 }
-
-/*
-.preview:hover > #first{
-  left: -5vw;
-  top: 5vw;
-  transition: 0.5s;
-}
-
-*/
