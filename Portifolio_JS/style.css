@@ -1265,26 +1265,33 @@ body {
   transition: 0.5s;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
+  * {
+    max-width: 97vw;
+  }
   .subtitle-2, .projects {
     display: none;
   }
+
   .container {
     padding: 0;
     margin: 0;
     height: 12vh;
+    width: 99vw;
+    text-align: center;
   }
 
   .glitch, .glow {
     font-size: 10vh;
   }
+
   .row-1, .row-2 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 991px;
+    width: 99vw;
   }
 
   .photocard{
@@ -1338,7 +1345,7 @@ body {
 
   .contact-2 {
     top: 30vh;
-    margin-left: 10vw;
+    margin-left: 7vw;
     width: 10vw;
     height: 10vh;
   }
@@ -1461,6 +1468,75 @@ body {
   
   .tracer-8{
     right: -6vw;
+  }
+
+  .subtitle-1 {
+    width: 60vw;
+    left: -20vw;
+    top: 1vh;
+  }
+
+  .tracer-10, .tracer-12 {
+    width: 55vw;
+  }
+
+  .tracer-11, .tracer-13 {
+    width: 10vw;
+  }
+
+  .tracer-11 {
+    left: 52vw;
+  }
+
+  .technologies {
+    left: 2.5vw;
+  }
+
+  .techcard {
+    width: 60vw;
+    height: 45vh;
+    top: 15vh;
+    left: -16vw;
+  }
+
+  .skillicons {
+    width: 50vw;
+    height: 40vh;
+    justify-content: space-around;
+    top: -1vh;
+  }
+
+  .tracer-14, .tracer-19 {
+    left: -5vw;
+    width: 70vw;
+  }
+
+  .tracer-15, .tracer-16, .tracer-17, .tracer-18 {
+    width: 10vw;
+  }
+
+  .tracer-16, .tracer-18 {
+    left: 60vw;
+  }
+
+  .tracer-15, .tracer-17 {
+    left: -9.5vw;
+  }
+
+  .subicon1 {
+    text-align: center;
+    width: 60vw;
+    font-size: 4vh;
+  }
+  .subicon2{
+    text-align: center;
+    width: 60vw;
+    font-size: 4vh;
+  }
+  
+  .icon {
+    width: 10vw;
+    height: 10vh;
   }
   
 }
