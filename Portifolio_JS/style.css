@@ -1430,12 +1430,12 @@ body {
 
   .bgskillcard .skills {
     font-size: 3vh;
-    width: 50vw;
+    width: 60vw;
     left: 1.5vw;
     text-align: center;
   }
   .bgskillcard .courses {
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
 
   .techskills {
