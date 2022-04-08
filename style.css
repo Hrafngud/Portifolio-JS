@@ -654,7 +654,7 @@ body {
 }
 
 .mypic {
-  background-image: url(/images/eumesm2.png);
+  background-image: url(images/eumesm2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -666,7 +666,7 @@ body {
 }
 
 .github {
-  background-image: url(/assets/github.svg);
+  background-image: url(assets/github.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -678,7 +678,7 @@ body {
 }
 
 .linkedin {
-  background-image: url(/assets/linkedin.svg);
+  background-image: url(assets/linkedin.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -691,7 +691,7 @@ body {
 }
 
 .contact-1 {
-  background-image: url(/assets/telegram.png);
+  background-image: url(assets/telegram.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -704,7 +704,7 @@ body {
 }
 
 .contact-2 {
-  background-image: url(/assets/whatsapp.svg);
+  background-image: url(assets/whatsapp.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -717,7 +717,7 @@ body {
 }
 
 .contact-3 {
-  background-image: url(/assets/email.svg);
+  background-image: url(assets/email.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -758,7 +758,7 @@ body {
 }
 
 .contact-1 {
-  background-image: url(/assets/telegram.png);
+  background-image: url(assets/telegram.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -771,7 +771,7 @@ body {
 }
 
 .contact-2 {
-  background-image: url(/assets/whatsapp.svg);
+  background-image: url(assets/whatsapp.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -784,7 +784,7 @@ body {
 }
 
 .contact-3 {
-  background-image: url(/assets/email.svg);
+  background-image: url(assets/email.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -983,84 +983,84 @@ body {
 }
 
 .i1 {
-  background-image: url(/assets/html.svg);
+  background-image: url(assets/html.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i2 {
-  background-image: url(/assets/css.svg);
+  background-image: url(assets/css.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i3{
-  background-image: url(/assets/js.svg);
+  background-image: url(assets/js.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i4{
-  background-image: url(/assets/vue.svg);
+  background-image: url(assets/vue.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i5 {
-  background-image: url(/assets/php.svg);
+  background-image: url(assets/php.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i6 {
-  background-image: url(/assets/sql.svg);
+  background-image: url(assets/sql.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i1:hover {
-  background-image: url(/assets/htmll.svg);
+  background-image: url(assets/htmll.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i2:hover {
-  background-image: url(/assets/cssl.svg);
+  background-image: url(assets/cssl.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i3:hover {
-  background-image: url(/assets/jsl.svg);
+  background-image: url(assets/jsl.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i4:hover {
-  background-image: url(/assets/vuel.svg);
+  background-image: url(assets/vuel.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i5:hover {
-  background-image: url(/assets/phpl.svg);
+  background-image: url(assets/phpl.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .i6:hover {
-  background-image: url(/assets/sqll.svg);
+  background-image: url(assets/sqll.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1216,7 +1216,7 @@ body {
 .prev1 {
  border-radius: 15px;
  border: 3px solid var(--neongreen);
- background-image: url(/images/Calculadora.png);
+ background-image: url(images/Calculadora.png);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -1224,7 +1224,7 @@ body {
 
 .prev2{
   border: 3px solid var(--pink);
-  background-image: url(/images/Agencia.png);
+  background-image: url(images/Agencia.png);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -1233,7 +1233,7 @@ body {
  .prev3 {
   border-radius: 15px;
   border: 3px solid var(--lightblue);
-  background-image: url(/images/AmorDaSerra.png);
+  background-image: url(images/AmorDaSerra.png);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -1241,7 +1241,7 @@ body {
 
  .prev4 {
    border: 3px solid var(--purple);
-   background-image: url(/images/Relogio.png);
+   background-image: url(images/Relogio.png);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -1374,7 +1374,7 @@ body {
   .mobitem1 {
     width: 45vw;
     height: 35vh;
-    background-image: url(/images/mobcalculadora.png);
+    background-image: url(images/mobcalculadora.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1386,7 +1386,7 @@ body {
   .mobitem2 {
     width: 45vw;
     height: 35vh;
-    background-image: url(/images/mobagencia.png);
+    background-image: url(images/mobagencia.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1398,7 +1398,7 @@ body {
   .mobitem3 {
    width: 45vw;
    height: 35vh;
-   background-image: url(/images/mobamor.png);
+   background-image: url(images/mobamor.png);
    background-position: center;
    background-repeat: no-repeat;
    background-size: contain;
@@ -1410,7 +1410,7 @@ body {
   .mobitem4 {
     width: 45vw;
     height: 35vh;
-    background-image: url(/images/mobrelogio.png);
+    background-image: url(images/mobrelogio.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
