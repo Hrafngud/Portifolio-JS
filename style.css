@@ -630,6 +630,7 @@ body {
   height: 3px;
   color: var(--blue);
   background-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .row-1 {
@@ -1204,6 +1205,10 @@ body {
   position: relative;
 }
 
+.link {
+  color: white;
+}
+
 .link:visited {
   color: white;
 }
@@ -1431,7 +1436,7 @@ body {
   .bgskillcard .skills {
     font-size: 3vh;
     width: 60vw;
-    left: 1.5vw;
+    left: -3vw;
     text-align: center;
   }
   .bgskillcard .courses {
